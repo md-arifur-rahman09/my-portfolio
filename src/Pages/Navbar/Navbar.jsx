@@ -1,17 +1,8 @@
-
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link, NavLink } from 'react-router';
+
 const Navbar = () => {
-  const [isShrunk, setIsShrunk] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsShrunk(window.scrollY > 50); // You can adjust the scroll threshold
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const navItems = (
     <>
@@ -22,38 +13,42 @@ const Navbar = () => {
   );
 
   return (
-    <div className={`navbar fixed top-0 z-50 w-full bg-base-100 shadow-md transition-all duration-300 ease-in-out ${
-      isShrunk ? 'py-2 h-14' : 'py-2 h-16'
-    }`}>
-      {/* Navbar Start */}
-      <div className="navbar-start ">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h10m-10 6h16" />
-            </svg>
+    <div>
+      <div className="navbar fixed top-0 z-50 w-full bg-base-100 shadow-md transition-all duration-300 ease-in-out  py-2 h-14" >
+
+        <div className="w-full px-4 lg:px-8 flex justify-between items-center">
+          {/* Navbar Start */}
+          <div className="flex items-center">
+            <div className="dropdown lg:hidden">
+              <div tabIndex={0} role="button" className="btn btn-ghost">
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h10m-10 6h16" />
+                </svg>
+              </div>
+              <ul className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 z-[1]">
+                {navItems}
+              </ul>
+            </div>
+            <Link to="/" className="text-xl md:text-2xl font-bold text-primary transition-all duration-300" >
+              Arif<span className="text-secondary">.dev</span>
+            </Link>
           </div>
-          <ul className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 z-[1]">
-            {navItems}
-          </ul>
+
+          {/* Navbar Center - hidden on small screen */}
+          <div className="hidden lg:flex">
+            <ul className="menu menu-horizontal px-1 gap-2">
+              {navItems}
+            </ul>
+          </div>
+
+          {/* Navbar End */}
+          <div>
+            <Link to="/contact" className="btn btn-primary font-semibold">
+              Contact
+            </Link>
+          </div>
         </div>
-        <Link to="/" className={`text-xl  md:text-2xl font-bold text-primary transition-all duration-300  ${
-          isShrunk ? 'text-lg' : ''
-        }`}>
-          Arif<span className="text-secondary ">.dev</span>
-        </Link>
-      </div>
-
-      {/* Navbar Center */}
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal  px-1 gap-2">{navItems}</ul>
-      </div>
-
-      {/* Navbar End */}
-      <div className="navbar-end">
-        <Link to="/contact" className="btn btn-primary font-semibold">
-          Contact
-        </Link>
+        
       </div>
     </div>
   );

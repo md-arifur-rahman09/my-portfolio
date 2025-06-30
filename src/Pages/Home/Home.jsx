@@ -14,25 +14,29 @@ import Contact from '../Contact/Contact';
 const Home = () => {
     return (
         <div>
-            <section >
-              <Hero ></Hero>
-            </section>
             <section>
-                <About></About>
+                <Hero />
             </section>
+
+            <section className="min-h-[70vh]">
+                <About />
+            </section>
+
             <section>
-                <Skills></Skills>
+                <Skills />
             </section>
+
             <section>
-                <Education></Education>
+                <Education />
             </section>
+
             <section>
-                <Projects></Projects>
+                <Projects />
             </section>
-            <section >
-                <Contact></Contact>
+
+            <section className="min-h-[70vh]">
+                <Contact />
             </section>
-         
         </div>
     );
 };

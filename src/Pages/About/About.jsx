@@ -1,6 +1,8 @@
+import React from 'react';
+
 const About = () => {
     return (
-        <section className="bg-base-100 py-16 px-6 lg:px-20">
+        <section className="bg-base-100 py-16 px-6 lg:px-20 min-h-[70vh] flex items-center">
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-4xl font-bold text-primary mb-6">👨‍💻 About Me</h2>
 

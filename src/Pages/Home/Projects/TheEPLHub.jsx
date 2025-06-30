@@ -4,7 +4,7 @@ import BackButton from '../../button/BackButton';
 const TheEPLHub = () => {
     const [scale, setScale] = useState(1);
 
-    const handleDoubleClick = () => {
+    const handleClick = () => {
         setScale(scale === 1.3 ? 1 : 1.3);
     };
 
@@ -31,7 +31,7 @@ const TheEPLHub = () => {
                 <h2 className="text-3xl font-bold text-primary mb-6">⚽ The EPL Hub</h2>
 
                 <div
-                    onDoubleClick={handleDoubleClick}
+                    onClick={handleClick}
                     className="transition-transform duration-300 ease-in-out cursor-pointer w-fit mx-auto"
                     style={{ transform: `scale(${scale})` }}
                 >

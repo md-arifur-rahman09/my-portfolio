@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Hero = () => {
     return (
-        <div className="hero min-h-screen bg-base-100 px-5 lg:px-20 bg-gradient-to-r from-[#e8f5e9] via-[#f1f8e9] to-[#e3f2fd]">
+        <div className="hero min-h-[70vh] bg-base-100 px-5 lg:px-20 bg-gradient-to-r from-[#e8f5e9] via-[#f1f8e9] to-[#e3f2fd]">
             <div className="hero-content flex-col lg:flex-row-reverse gap-10">
                 {/* Right Side: Image */}
                 <img
