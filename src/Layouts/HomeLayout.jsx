@@ -9,10 +9,10 @@ const HomeLayout = () => {
 
     return (
         <div>
-            <nav>
+            <nav >
                 <Navbar  ></Navbar>
             </nav>
-            <main>
+            <main className='pt-16'>
             <Outlet ></Outlet>
             </main>
             <footer>

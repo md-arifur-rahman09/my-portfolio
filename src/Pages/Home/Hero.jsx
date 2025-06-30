@@ -7,7 +7,7 @@ const Hero = () => {
             <div className="hero-content flex-col lg:flex-row-reverse gap-10">
                 {/* Right Side: Image */}
                 <img
-                    src="/src/assets/arif2.JPG"
+                    src="https://i.postimg.cc/Tw5wsJS6/arif2.jpg"
                     className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg rounded-full shadow-2xl"
                     alt="Md Arifur Rahman"
                 />

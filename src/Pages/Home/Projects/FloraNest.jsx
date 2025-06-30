@@ -24,7 +24,7 @@ const FloraNest = () => {
     ];
 
     return (
-        <section className="bg-base-100 py-16 px-6 lg:px-20">
+        <section className="bg-base-100 py-16 px-6 lg:px-20 mb-10 lg:mb-20">
             <BackButton></BackButton>
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-3xl font-bold text-primary mb-6">🌿 Flora Nest</h2>
@@ -37,7 +37,7 @@ const FloraNest = () => {
                     <img
                         src="https://i.postimg.cc/ZK4t8Kxc/flora-nest.jpg"
                         alt="Flora Nest"
-                        className="rounded-lg mb-8 shadow-lg"
+                    className="rounded-lg mb-8 shadow-lg"
                     />
                 </div>
 

@@ -1,5 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router'; 
+import { PiProjectorScreenLight } from 'react-icons/pi';
+import { TbWorldWww } from 'react-icons/tb';
+import { Link } from 'react-router';
 
 const projects = [
     {
@@ -18,10 +20,11 @@ const projects = [
     },
     {
         id: 3,
-        name: 'Event Explorer',
-        image: 'https://i.ibb.co/pRJ1K45/event-explorer.png',
-        path: '/projects/event-explorer',
-        description: 'An event-based web app built with React-Firebase and dynamic routing.'
+        name: 'The EPL Hub',
+        image: 'https://i.postimg.cc/7Yp4J1JX/the-EPL-hub.jpg',
+        path: '/projects/the-epl-hub',
+        description: 'An interactive sports event platform based on the English Premier League, featuring user-auth, team-wise filtering, and dynamic routing.',
+
     },
 ];
 
@@ -29,7 +32,7 @@ const Projects = () => {
     return (
         <section className="bg-base-200 py-16 px-6 lg:px-20 bg-gradient-to-r from-[#e8f5e9] via-[#f1f8e9] to-[#e3f2fd]">
             <div className="max-w-6xl mx-auto">
-                <h2 className="text-4xl font-bold text-primary mb-10 text-center">🚀 My Projects</h2>
+                <h2 className="text-4xl font-bold flex justify-center text-primary mb-10 "><span className='flex items-center  justify-center mr-3 text-fuchsia-700'><TbWorldWww /></span> My Projects</h2>
 
                 <div className="space-y-8">
                     {projects.map(project => (

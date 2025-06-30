@@ -10,6 +10,7 @@ import Error404 from './Pages/Errors/Error404'
 import Projects from './Pages/Home/Projects/Projects'
 import FloraNest from './Pages/Home/Projects/FloraNest'
 import AthleticHub from './Pages/Home/Projects/AthleticHub'
+import TheEPLHub from './Pages/Home/Projects/TheEPLHub'
 
 
 
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path:'/projects/athletic-hub',
         Component: AthleticHub
+      },
+      {
+        path:'projects/the-epl-hub',
+        Component:TheEPLHub
       }
      
      
