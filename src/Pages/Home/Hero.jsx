@@ -22,12 +22,12 @@ const Hero = () => {
                     </p>
 
                     {/* Social Buttons */}
-                    <div className="flex gap-4">
+                    <div className="flex flex-wrap gap-3">
                         <a
                             href="https://github.com/md-arifur-rahman09"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="btn btn-outline btn-primary"
+                            className="btn btn-outline btn-primary btn-sm sm:btn-md"
                         >
                             <FaGithub className="mr-2" /> GitHub
                         </a>
@@ -35,21 +35,20 @@ const Hero = () => {
                             href="https://www.linkedin.com/in/md-arifur-rahman09/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="btn btn-outline btn-secondary"
+                            className="btn btn-outline btn-secondary btn-sm sm:btn-md"
                         >
                             <FaLinkedin className="mr-2" /> LinkedIn
                         </a>
-
-                        {/* Resume Button */}
                         <a
                             href="https://drive.google.com/file/d/12Z6Oe9XEe_YiPjSgs9iK2Ue24CrI3KHN/view"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="btn btn-success"
+                            className="btn btn-success btn-sm sm:btn-md"
                         >
                             View Resume
                         </a>
                     </div>
+
                 </div>
             </div>
         </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { BsSendFill } from 'react-icons/bs';
+import { PiPhoneDisconnectBold } from 'react-icons/pi';
 import Swal from 'sweetalert2';
 
 const ContactSection = () => {
@@ -44,10 +45,11 @@ const ContactSection = () => {
 
     return (
         <section className="py-16 px-6 lg:px-20 bg-gradient-to-r from-[#e8f5e9] via-[#f1f8e9] to-[#e3f2fd] animate-gradient-bg">
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary text-center mb-8 sm:mb-10"> 📬  Contact Me</h2>
             <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 items-start gap-8 bg-white rounded-lg shadow-xl p-10">
                 {/* Left: Contact Info */}
                 <div className="space-y-4 animate-slide-in-left ">
-                    <h2 className="text-3xl font-bold text-primary">📞 Contact Information</h2>
+                    <h2 className="text-xl font-bold text-primary">📞 Contact Information</h2>
                     <p><strong className="text-primary">Location:</strong> Dhaka, Bangladesh</p>
                     <p><strong className="text-primary">Phone:</strong> +8801936566454</p>
                     <p><strong className="text-primary">WhatsApp:</strong> +8801936566454</p>
@@ -56,7 +58,7 @@ const ContactSection = () => {
 
                 {/* Right: Contact Form */}
                 <div className="animate-slide-in-right">
-                    <h2 className="text-3xl font-bold text-primary mb-6">✉️ Contact Me</h2>
+                    <h2 className="text-xl font-bold text-primary mb-6">✉️ Send  Message</h2>
                     <form onSubmit={handleSubmit} className="space-y-6">
                         <div>
                             <label className="block font-semibold mb-1">Your Name</label>
