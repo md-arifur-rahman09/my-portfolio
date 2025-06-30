@@ -9,7 +9,7 @@ const Footer = () => {
 
                 {/* Brand Section */}
                 <div>
-                   <Link to='/' > <h2 className="text-2xl font-bold text-green-800 hover:text-green-400">Arif<span className="text-secondary hover:text-green-400">.dev</span></h2></Link>
+                   <Link to='/' > <h2 className="text-2xl font-bold text-primary hover:text-green-400">Arif<span className="text-secondary hover:text-green-400">.dev</span></h2></Link>
                     <p className="mt-3 text-sm text-gray-600">
                         Passionate Frontend Developer specializing in React, Tailwind CSS & modern web technologies. Turning ideas into reality through code.
                     </p>

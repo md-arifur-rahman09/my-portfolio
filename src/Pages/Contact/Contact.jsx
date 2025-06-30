@@ -1,6 +1,5 @@
 import React from 'react';
 import { BsSendFill } from 'react-icons/bs';
-import { PiPhoneDisconnectBold } from 'react-icons/pi';
 import Swal from 'sweetalert2';
 
 const ContactSection = () => {
@@ -10,18 +9,18 @@ const ContactSection = () => {
         const name = form.name.value;
         const email = form.email.value;
         const message = form.message.value;
+         const time = new Date().toLocaleString('en-US', { timeZone: 'Asia/Dhaka' }); 
 
-        fetch('https://formsubmit.co/ajax/aimless.arif09@gmail.com', {
+        fetch('https://formspree.io/f/mvgrlkev', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 Accept: 'application/json',
             },
-            body: JSON.stringify({ name, email, message }),
+            body: JSON.stringify({ name, email, message,time }),
         })
-            .then((response) => response.json())
-            .then((data) => {
-                if (data.success) {
+            .then((response) => {
+                if (response.ok) {
                     Swal.fire({
                         position: 'top-end',
                         icon: 'success',
@@ -31,7 +30,9 @@ const ContactSection = () => {
                     });
                     form.reset();
                 } else {
-                    throw new Error(data.message || 'Something went wrong');
+                    return response.json().then((data) => {
+                        throw new Error(data?.errors?.[0]?.message || 'Something went wrong');
+                    });
                 }
             })
             .catch((error) => {
@@ -58,7 +59,7 @@ const ContactSection = () => {
 
                 {/* Right: Contact Form */}
                 <div className="animate-slide-in-right">
-                    <h2 className="text-xl font-bold text-primary mb-6">✉️ Send  Message</h2>
+                    <h2 className="text-xl font-bold text-primary mb-6">✉️ Send Message</h2>
                     <form onSubmit={handleSubmit} className="space-y-6">
                         <div>
                             <label className="block font-semibold mb-1">Your Name</label>
@@ -66,7 +67,7 @@ const ContactSection = () => {
                                 type="text"
                                 name="name"
                                 required
-                                className="input input-bordered w-full focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300 transform hover:scale-[1.02] focus:scale-[1.02]"
+                                className="input input-bordered w-full"
                                 placeholder="Enter your name"
                             />
                         </div>
@@ -76,7 +77,7 @@ const ContactSection = () => {
                                 type="email"
                                 name="email"
                                 required
-                                className="input input-bordered w-full focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300 transform hover:scale-[1.02] focus:scale-[1.02]"
+                                className="input input-bordered w-full"
                                 placeholder="Enter your email"
                             />
                         </div>
@@ -86,14 +87,14 @@ const ContactSection = () => {
                                 name="message"
                                 rows="5"
                                 required
-                                className="textarea textarea-bordered w-full focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300 transform hover:scale-[1.02] focus:scale-[1.02]"
+                                className="textarea textarea-bordered w-full"
                                 placeholder="Type your message here..."
                             />
                         </div>
                         <div>
                             <button
                                 type="submit"
-                                className="btn btn-primary flex items-center justify-center space-x-2 w-full py-3 hover:scale-105 transition-all duration-300 transform hover:shadow-lg"
+                                className="btn btn-primary flex items-center justify-center space-x-2 w-full py-3"
                             >
                                 <BsSendFill size={20} className="animate-pulse" />
                                 <span className="font-medium">Send Message</span>
@@ -102,6 +103,7 @@ const ContactSection = () => {
                     </form>
                 </div>
             </div>
+
             <style>{`
                 @keyframes gradientAnimation {
                     0% { background-position: 0% 50%; }
