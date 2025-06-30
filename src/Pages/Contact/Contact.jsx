@@ -9,7 +9,7 @@ const ContactSection = () => {
         const name = form.name.value;
         const email = form.email.value;
         const message = form.message.value;
-         const time = new Date().toLocaleString('en-US', { timeZone: 'Asia/Dhaka' }); 
+         const BDtime = new Date().toLocaleString('en-US', { timeZone: 'Asia/Dhaka' }); 
 
         fetch('https://formspree.io/f/mvgrlkev', {
             method: 'POST',
@@ -17,7 +17,7 @@ const ContactSection = () => {
                 'Content-Type': 'application/json',
                 Accept: 'application/json',
             },
-            body: JSON.stringify({ name, email, message,time }),
+            body: JSON.stringify({ name, email, message,BDtime }),
         })
             .then((response) => {
                 if (response.ok) {
