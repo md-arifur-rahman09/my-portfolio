@@ -34,7 +34,7 @@ const Home = () => {
                 <Projects />
             </section>
 
-            <section className="min-h-[70vh] bg-base-200">
+            <section className="min-h-[70vh] ">
                 <Contact />
             </section>
         </div>
