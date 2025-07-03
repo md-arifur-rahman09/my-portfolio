@@ -3,8 +3,12 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Hero = () => {
     return (
-        <div className="hero min-h-[70vh] bg-base-100 px-5 lg:px-20 bg-gradient-to-r from-[#e8f5e9] via-[#f1f8e9] to-[#e3f2fd]">
-            <div className="hero-content flex-col lg:flex-row-reverse gap-10">
+        <div className="hero min-h-[75vh] px-5 lg:px-20 
+   
+    
+            transition-all duration-300 ">
+
+            <div className="hero-content flex-col lg:flex-row-reverse gap-10 text-base-content">
                 {/* Right Side: Image */}
                 <img
                     src="https://i.postimg.cc/Tw5wsJS6/arif2.jpg"
@@ -16,7 +20,7 @@ const Hero = () => {
                 <div>
                     <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Md Arifur Rahman</h1>
                     <h2 className="text-xl md:text-2xl font-semibold text-secondary mb-3">MERN Stack Developer</h2>
-                    <p className="text-base md:text-lg text-justify text-gray-600 max-w-xl mb-6">
+                    <p className="text-base md:text-lg text-justify max-w-xl mb-6">
                         Full Stack Web Developer from Bangladesh 🇧🇩, focused on building dynamic and scalable MERN stack applications.
                         I enjoy solving real-world problems with clean code and continuously improving my skills in React, Node.js, and modern backend tools.
                     </p>
@@ -48,7 +52,6 @@ const Hero = () => {
                             View Resume
                         </a>
                     </div>
-
                 </div>
             </div>
         </div>

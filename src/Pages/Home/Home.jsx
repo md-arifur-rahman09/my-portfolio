@@ -30,11 +30,11 @@ const Home = () => {
                 <Education />
             </section>
 
-            <section>
+        <section>
                 <Projects />
             </section>
 
-            <section className="min-h-[70vh]">
+            <section className="min-h-[70vh] bg-base-200">
                 <Contact />
             </section>
         </div>

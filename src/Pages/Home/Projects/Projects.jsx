@@ -9,52 +9,61 @@ const projects = [
         name: 'Flora Nest',
         image: 'https://i.postimg.cc/ZK4t8Kxc/flora-nest.jpg',
         path: '/projects/flora-nest',
-        description: 'Plant & bonsai booking app with Firebase Auth, admin features, and modern UI.'
+        description:
+            'Plant & bonsai booking app with Firebase Auth, admin features, and modern UI.',
     },
     {
         id: 2,
         name: 'Athletic Hub',
         image: 'https://i.postimg.cc/MGch6czW/athletic-hub.jpg',
         path: '/projects/athletic-hub',
-        description: 'Sports event platform with category filtering, dashboards, and analytics.'
+        description:
+            'Sports event platform with category filtering, dashboards, and analytics.',
     },
     {
         id: 3,
         name: 'The EPL Hub',
         image: 'https://i.postimg.cc/7Yp4J1JX/the-EPL-hub.jpg',
         path: '/projects/the-epl-hub',
-        description: 'An interactive sports event platform based on the English Premier League, featuring user-auth, team-wise filtering, and dynamic routing.',
-
+        description:
+            'An interactive sports event platform based on the English Premier League, featuring user-auth, team-wise filtering, and dynamic routing.',
     },
 ];
 
 const Projects = () => {
     return (
-        <section className="bg-base-200 py-16 px-6 lg:px-20 bg-gradient-to-r from-[#e8f5e9] via-[#f1f8e9] to-[#e3f2fd]">
+        <section className=" py-16 px-6 lg:px-20">
             <div className="max-w-6xl mx-auto">
-                <h2 className="text-4xl font-bold flex justify-center text-primary mb-10 "><span className='flex items-center  justify-center mr-3 text-fuchsia-700'><TbWorldWww /></span> My Projects</h2>
+                <h2 className="text-4xl font-bold flex justify-center text-primary mb-10">
+                    <span className="flex items-center justify-center mr-3 text-fuchsia-700">
+                        <TbWorldWww />
+                    </span>
+                    My Projects
+                </h2>
 
                 <div className="space-y-8">
-                    {projects.map(project => (
+                    {projects.map((project) => (
                         <Link
                             key={project.id}
                             to={project.path}
-                            className="flex flex-col md:flex-row items-center gap-6 bg-white shadow-md rounded-lg overflow-hidden 
-                                       transform transition-transform duration-300 hover:scale-110 hover:shadow-lg group"
+                            className="flex flex-col md:flex-row items-center gap-6 
+                         bg-base-100 shadow-md rounded-lg overflow-hidden 
+                         transform transition-transform duration-300 
+                         hover:scale-105 hover:shadow-lg group
+                         dark:bg-[#111827] dark:border dark:border-gray-700 
+                         dark:hover:border-fuchsia-600 dark:shadow-lg"
                         >
-                            {/* Project Image */}
                             <img
                                 src={project.image}
                                 alt={project.name}
                                 className="w-full md:w-1/3 h-56 object-cover object-center p-2 shadow-2xl"
                             />
 
-                            {/* Project Info */}
                             <div className="p-4 text-left md:w-2/3">
-                                <h3 className="text-2xl font-bold text-gray-800 mb-2 group-hover:text-primary transition">
+                                <h3 className="text-2xl font-bold mb-2 text-gray-800 dark:text-gray-100 group-hover:text-primary transition">
                                     {project.name}
                                 </h3>
-                                <p className="text-gray-600">
+                                <p className="text-gray-600 dark:text-gray-400">
                                     {project.description}
                                 </p>
                             </div>

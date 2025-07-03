@@ -1,8 +1,8 @@
 const Education = () => {
     return (
-        <section className="bg-base-100 py-16 px-6 lg:px-20">
-            <div className="max-w-4xl mx-auto">
-                <h2 className="text-4xl font-bold text-primary mb-10">🎓 Educational Qualification</h2>
+        <section className="  py-16 px-6 lg:px-20">
+            <div className="max-w-4xl mx-auto ">
+                <h2 className="text-4xl font-bold text-primary text-center mb-12 ">🎓 Educational Qualification</h2>
 
                 <div className="space-y-6">
                     <div className="bg-white shadow-md rounded-lg p-6 border-l-4 border-primary">

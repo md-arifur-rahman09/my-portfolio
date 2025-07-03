@@ -24,7 +24,8 @@ const FloraNest = () => {
     ];
 
     return (
-        <section className="bg-base-100 py-16 px-6 lg:px-20 mb-10 lg:mb-20">
+        <section className="bg-base-100 py-16 px-6 lg:px-20 pb-10 lg:pb-20  bg-gradient-to-r 
+    from-[#e8f5e9] via-[#f1f8e9] to-[#e3f2fd]">
             <BackButton></BackButton>
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-3xl font-bold text-primary mb-6">🌿 Flora Nest</h2>

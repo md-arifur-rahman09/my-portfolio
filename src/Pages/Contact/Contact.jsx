@@ -45,12 +45,13 @@ const Contact = () => {
     };
 
     return (
-        <section className="py-16 px-6 lg:px-20 min-h-[70vh] bg-gradient-to-r from-[#e8f5e9] via-[#f1f8e9] to-[#e3f2fd] animate-gradient-bg flex items-center">
+        <section className="py-16 px-6 lg:px-20 min-h-[60vh]   transition-all duration-300 flex items-center">
             <div className="w-full">
-                <h2 className="text-3xl sm:text-4xl font-bold text-primary text-center mb-8 sm:mb-10">📬 Contact Me</h2>
+                <h2 className="text-3xl sm:text-4xl font-bold text-primary text-center mb-10">📬 Contact Me</h2>
 
-                <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 items-start gap-8 bg-white rounded-lg shadow-xl p-10">
-                    <div className="space-y-4 animate-slide-in-left">
+                <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 items-start gap-8 bg-white   rounded-lg shadow-lg p-10">
+                    {/* Left - Info */}
+                    <div className="space-y-4 animate-slide-in-left text-base-content">
                         <h2 className="text-xl font-bold text-primary">📞 Contact Information</h2>
                         <p><strong className="text-primary">Location:</strong> Dhaka, Bangladesh</p>
                         <p><strong className="text-primary">Phone:</strong> +8801936566454</p>
@@ -58,20 +59,21 @@ const Contact = () => {
                         <p><strong className="text-primary">Email:</strong> aimless.arif09@gmail.com</p>
                     </div>
 
-                    <div className="animate-slide-in-right">
+                    {/* Right - Form */}
+                    <div className="animate-slide-in-right text-base-content">
                         <h2 className="text-xl font-bold text-primary mb-6">✉️ Send Message</h2>
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div>
                                 <label className="block font-semibold mb-1">Your Name</label>
-                                <input name="name" type="text" className="input input-bordered w-full" required />
+                                <input name="name" type="text" className="input input-bordered w-full bg-base-100 text-base-content" required />
                             </div>
                             <div>
                                 <label className="block font-semibold mb-1">Your Email</label>
-                                <input name="email" type="email" className="input input-bordered w-full" required />
+                                <input name="email" type="email" className="input input-bordered w-full bg-base-100 text-base-content" required />
                             </div>
                             <div>
                                 <label className="block font-semibold mb-1">Your Message</label>
-                                <textarea name="message" rows="5" className="textarea textarea-bordered w-full" required></textarea>
+                                <textarea name="message" rows="5" className="textarea textarea-bordered w-full bg-base-100 text-base-content" required></textarea>
                             </div>
                             <button type="submit" className="btn btn-primary w-full flex items-center justify-center space-x-2 py-3">
                                 <BsSendFill size={20} className="animate-pulse" />
@@ -82,16 +84,8 @@ const Contact = () => {
                 </div>
             </div>
 
+            {/* Animations */}
             <style>{`
-                @keyframes gradientAnimation {
-                    0% { background-position: 0% 50%; }
-                    50% { background-position: 100% 50%; }
-                    100% { background-position: 0% 50%; }
-                }
-                .animate-gradient-bg {
-                    background-size: 200% 200%;
-                    animation: gradientAnimation 15s ease infinite;
-                }
                 @keyframes slideInLeft {
                     from { opacity: 0; transform: translateX(-50px); }
                     to { opacity: 1; transform: translateX(0); }

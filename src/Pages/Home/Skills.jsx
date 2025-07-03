@@ -9,11 +9,20 @@ import {
 import Marquee from 'react-fast-marquee';
 
 const SkillBox = ({ icon: Icon, name }) => (
-    <div className="flex-shrink-0 flex flex-col items-center justify-center w-28 sm:w-32 md:w-36 lg:w-40 h-28 sm:h-32 md:h-36 lg:h-40 bg-white shadow-lg rounded-xl m-2 sm:m-3 md:m-4 hover:scale-110 transition-transform duration-300 hover:shadow-2xl">
-        <Icon className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-primary" />
-        <p className="text-sm sm:text-base md:text-base lg:text-lg mt-2 font-semibold text-gray-700">{name}</p>
+    <div className="flex-shrink-0 flex flex-col items-center justify-center 
+                  w-28 sm:w-32 md:w-36 lg:w-40 h-28 sm:h-32 md:h-36 lg:h-40 
+                  bg-white dark:bg-[#1f2937] dark:border dark:border-gray-700 
+                  shadow-lg dark:shadow-md rounded-xl 
+                  m-2 sm:m-3 md:m-4 
+                  hover:scale-110 transition-transform duration-300 
+                  hover:shadow-2xl dark:hover:shadow-fuchsia-700/30">
+        <Icon className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-primary dark:text-fuchsia-400" />
+        <p className="text-sm sm:text-base md:text-base lg:text-lg mt-2 font-semibold text-gray-700 dark:text-gray-200">
+            {name}
+        </p>
     </div>
 );
+
 
 const Skills = () => {
     const skills = [
@@ -33,7 +42,7 @@ const Skills = () => {
     ];
 
     return (
-        <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-10 bg-gradient-to-r from-[#e8f5e9] via-[#f1f8e9] to-[#e3f2fd] animate-gradient-bg">
+        <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-10 ">
             <div className="max-w-7xl mx-auto">
                 <h2 className="text-3xl sm:text-4xl font-bold text-primary text-center mb-8 sm:mb-10">🤹‍♂️ My Skills</h2>
 
