@@ -1,5 +1,7 @@
 import React from 'react';
 import { BsSendFill } from 'react-icons/bs';
+import { CiLocationOn } from 'react-icons/ci';
+import { MdEmail, MdPhone, MdWhatsapp } from 'react-icons/md';
 import Swal from 'sweetalert2';
 
 const Contact = () => {
@@ -49,16 +51,33 @@ const Contact = () => {
             <div className="w-full">
                 <h2 className="text-3xl sm:text-4xl font-bold text-primary text-center mb-10">📬 Contact Me</h2>
 
-                <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 items-start gap-8 bg-white   rounded-lg shadow-lg p-10">
+                <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 items-start gap-8 bg-white   rounded-lg shadow-lg p-10 ">
                     {/* Left - Info */}
-                    <div className="space-y-4 animate-slide-in-left text-base-content">
+                    <div className="flex-1 space-y-4 animate-slide-in-left text-base-content">
                         <h2 className="text-xl font-bold text-primary">📞 Contact Information</h2>
-                        <p><strong className="text-primary">Location:</strong> Dhaka, Bangladesh</p>
-                        <p><strong className="text-primary">Phone:</strong> +8801936566454</p>
-                        <p><strong className="text-primary">WhatsApp:</strong> +8801936566454</p>
-                        <p><strong className="text-primary">Email:</strong> aimless.arif09@gmail.com</p>
+
+                        <p className="flex items-center gap-2">
+                            <CiLocationOn className="text-xl text-primary" />
+                            <span><strong className="text-primary">Location:</strong> Dhaka, Bangladesh</span>
+                        </p>
+
+                        <p className="flex items-center gap-2">
+                            <MdPhone className="text-xl text-primary" />
+                            <span><strong className="text-primary">Phone:</strong> +8801936566454</span>
+                        </p>
+
+                        <p className="flex items-center gap-2">
+                            <MdWhatsapp className="text-xl text-primary" />
+                            <span><strong className="text-primary">WhatsApp:</strong> +8801936566454</span>
+                        </p>
+
+                        <p className="flex items-center gap-2">
+                            <MdEmail className="text-xl text-primary" />
+                            <span><strong className="text-primary">Email:</strong> aimless.arif09@gmail.com</span>
+                        </p>
                     </div>
 
+                 
                     {/* Right - Form */}
                     <div className="animate-slide-in-right text-base-content">
                         <h2 className="text-xl font-bold text-primary mb-6">✉️ Send Message</h2>

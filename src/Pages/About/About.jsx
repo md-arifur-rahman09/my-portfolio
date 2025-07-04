@@ -2,12 +2,12 @@ import React from 'react';
 
 const About = () => {
     return (
-        <section className="  border-b-1 border-gray-300  transition-all duration-300 py-20 px-6 lg:px-20 min-h-[80vh] flex items-center">
+        <section className="border-b-1 border-gray-300 transition-all duration-300 py-20 px-6 lg:px-20 min-h-[80vh] flex items-center">
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-4xl font-bold text-primary mb-6">👨‍💻 About Me</h2>
 
                 <p className="text-lg text-base-content mb-4 text-justify">
-                    Hello! I’m <span className="font-semibold text-secondary">Md Arifur Rahman</span>, a self-taught <span className="font-semibold">MERN Stack Developer</span> based in Bangladesh 🇧🇩. Though I graduated in Textile Engineering from BUTEX in 2021, my passion for technology started way back in childhood — I always dreamed of studying computer science and was fascinated by how digital things work.
+                    Hello! I’m <span className="font-semibold text-secondary">Md Arifur Rahman</span>, a self-taught <span className="font-semibold">MERN Stack Developer</span> based in Bangladesh 🇧🇩. Though I graduated in Textile Engineering from BUTEX in 2018, my passion for technology started way back in childhood — I always dreamed of studying computer science and was fascinated by how digital things work.
                 </p>
 
                 <p className="text-lg text-base-content mb-4 text-justify">
@@ -15,7 +15,11 @@ const About = () => {
                 </p>
 
                 <p className="text-lg text-base-content mb-4 text-justify">
-                    I’ve built real-world projects like <span className="font-medium">Flora Nest</span> — a bonsai booking platform, and <span className="font-medium">Athletic Hub</span> — an event management app. I enjoy solving problems, creating clean UI, and building full-stack features from scratch.
+                    A big part of my journey was guided by <span className="font-semibold text-secondary">Programming Hero</span> — a platform that provided me with not just technical training, but also constant motivation and real-world project-building experience. Their structured roadmap, hands-on projects, and continuous guidance helped me stay on track and become confident as a developer.
+                </p>
+
+                <p className="text-lg text-base-content mb-4 text-justify">
+                    I’ve built real-world projects like <span className="font-medium">Flora Nest</span> — a flower plant booking platform, and <span className="font-medium">Athletic Hub</span> — an event management app. I enjoy solving problems, creating clean UI, and building full-stack features from scratch.
                 </p>
 
                 <p className="text-lg text-base-content mb-4 text-justify">
