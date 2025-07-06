@@ -15,12 +15,42 @@ const About = () => {
                 </p>
 
                 <p className="text-lg text-base-content mb-4 text-justify">
-                    A big part of my journey was guided by <span className="font-semibold text-secondary">Programming Hero</span> — a platform that provided me with not just technical training, but also constant motivation and real-world project-building experience. Their structured roadmap, hands-on projects, and continuous guidance helped me stay on track and become confident as a developer.
+                    A big part of my journey was guided by {" "}
+
+                    <a
+                        href='https://www.programming-hero.com/'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className="font-semibold text-secondary underline"
+                    >
+                        Programming Hero
+                    </a> {" "}
+
+                    — a platform that provided me with not just technical training, but also constant motivation and real-world project-building experience. Their structured roadmap, hands-on projects, and continuous guidance helped me stay on track and become confident as a developer.
                 </p>
 
                 <p className="text-lg text-base-content mb-4 text-justify">
-                    I’ve built real-world projects like <span className="font-medium">Flora Nest</span> — a flower plant booking platform, and <span className="font-medium">Athletic Hub</span> — an event management app. I enjoy solving problems, creating clean UI, and building full-stack features from scratch.
+                    I’ve built real-world projects like {" "}
+                    <a
+                        href="https://bonsai-world-6feec.web.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-medium underline hover:text-primary"
+                    >
+                        Flora Nest
+                    </a> {" "}
+                    — a flower plant booking platform, and {" "}
+                    <a
+                        href="https://athletic-hub-7dbfe.web.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-medium underline  hover:text-primary"
+                    >
+                        Athletic Hub
+                    </a>  {" "}
+                    — an event management app. I enjoy solving problems, creating clean UI, and building full-stack features from scratch.
                 </p>
+
 
                 <p className="text-lg text-base-content mb-4 text-justify">
                     Outside of code, I’m a big fan of nature. I love planting trees and going fishing — activities that keep me calm, focused, and patient — just like coding does. I value consistency, curiosity, and creative thinking.

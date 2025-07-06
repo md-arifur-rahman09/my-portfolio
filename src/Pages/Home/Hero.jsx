@@ -44,7 +44,7 @@ const Hero = () => {
                             <FaLinkedin className="mr-2" /> LinkedIn
                         </a>
                         <a
-                            href="https://drive.google.com/file/d/12Z6Oe9XEe_YiPjSgs9iK2Ue24CrI3KHN/view"
+                            href="https://drive.google.com/file/d/1b08Lm27hqQBx1jDUNeAjAKN94oK7qcnW/view?usp=drive_link"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn btn-success btn-sm sm:btn-md"
