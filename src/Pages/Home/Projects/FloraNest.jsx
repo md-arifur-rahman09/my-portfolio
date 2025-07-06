@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import BackButton from '../../button/BackButton';
+import { useTitle } from '../../../hooks/UseTitle';
 
 const FloraNest = () => {
+    useTitle('Flora Nest')
     const [scale, setScale] = useState(1);
 
     const handleClick = () => {

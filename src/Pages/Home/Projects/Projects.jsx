@@ -2,6 +2,8 @@ import React from 'react';
 import { PiProjectorScreenLight } from 'react-icons/pi';
 import { TbWorldWww } from 'react-icons/tb';
 import { Link } from 'react-router';
+import { useTitle } from '../../../hooks/UseTitle';
+;
 
 const projects = [
     {
@@ -31,6 +33,7 @@ const projects = [
 ];
 
 const Projects = () => {
+    useTitle("Projects")
     return (
         <section className=" py-16 px-6 lg:px-20">
             <div className="max-w-6xl mx-auto">

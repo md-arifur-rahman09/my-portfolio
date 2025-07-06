@@ -5,6 +5,8 @@ import Skills from './Skills';
 import Education from './Education';
 import Projects from './Projects/Projects';
 import Contact from '../Contact/Contact';
+import { useTitle } from '../../hooks/UseTitle';
+
 // import Projects from './Projects/Projects';
 
 
@@ -12,6 +14,7 @@ import Contact from '../Contact/Contact';
 
 
 const Home = () => {
+    useTitle('Home')
     return (
         <div>
             <section>

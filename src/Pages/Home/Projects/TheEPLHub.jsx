@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import BackButton from '../../button/BackButton';
+import { useTitle } from '../../../hooks/UseTitle';
 
 const TheEPLHub = () => {
+    useTitle('The EPL Hub')
     const [scale, setScale] = useState(1);
 
     const handleClick = () => {

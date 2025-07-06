@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import BackButton from '../../button/BackButton';
+import { useTitle } from '../../../hooks/UseTitle';
 
 const AthleticHub = () => {
 
+    useTitle("Athletic Hub")
     const [scale, setScale] = useState(1);
 
     const handleClick = () => {
@@ -29,7 +31,7 @@ const AthleticHub = () => {
     from-[#e8f5e9] via-[#f1f8e9] to-[#e3f2fd]">
             <BackButton></BackButton>
             <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl font-bold text-primary mb-6">🏟️ Athletic Hub</h2>
+                <h2 className="text-3xl font-bold text-primary mb-6"> 🤾‍♀️ Athletic Hub</h2>
 
                 <div
                     onClick={handleClick}

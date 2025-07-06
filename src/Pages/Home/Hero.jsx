@@ -1,7 +1,9 @@
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
+
 const Hero = () => {
+   
     return (
         <div className="hero min-h-[75vh] px-5 lg:px-20 
    

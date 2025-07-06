@@ -3,8 +3,10 @@ import { BsSendFill } from 'react-icons/bs';
 import { CiLocationOn } from 'react-icons/ci';
 import { MdEmail, MdPhone, MdWhatsapp } from 'react-icons/md';
 import Swal from 'sweetalert2';
+import { useTitle } from '../../hooks/UseTitle';
 
 const Contact = () => {
+    useTitle("Contact")
     const handleSubmit = (e) => {
         e.preventDefault();
         const form = e.target;
