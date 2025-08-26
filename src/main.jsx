@@ -11,6 +11,9 @@ import Projects from './Pages/Home/Projects/Projects'
 import FloraNest from './Pages/Home/Projects/FloraNest'
 import AthleticHub from './Pages/Home/Projects/AthleticHub'
 import TheEPLHub from './Pages/Home/Projects/TheEPLHub'
+import StudyMate from './Pages/Home/Projects/StudyMate'
+
+
 
 
 
@@ -26,35 +29,39 @@ const router = createBrowserRouter([
         Component: Home
       },
       {
-        path:'about',
-        Component:About
+        path: 'about',
+        Component: About
       },
       {
-        path:'contact',
-        Component:Contact
+        path: 'contact',
+        Component: Contact
       },
       {
-        path:'projects',
+        path: 'projects',
         Component: Projects
+      },
+      {
+        path: '/projects/study-mate',
+        Component: StudyMate
       },
       {
         path: '/projects/flora-nest',
         Component: FloraNest
       },
       {
-        path:'/projects/athletic-hub',
+        path: '/projects/athletic-hub',
         Component: AthleticHub
       },
       {
-        path:'projects/the-epl-hub',
-        Component:TheEPLHub
+        path: 'projects/the-epl-hub',
+        Component: TheEPLHub
       }
-     
-     
+
+
     ]
   },
   {
-    path:'*',
+    path: '*',
     Component: Error404
   }
 ])
@@ -62,8 +69,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-     <RouterProvider router={router}>
+    <RouterProvider router={router}>
     </RouterProvider>
-   
+
   </StrictMode>,
 )

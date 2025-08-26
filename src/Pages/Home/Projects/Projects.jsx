@@ -6,8 +6,16 @@ import { useTitle } from '../../../hooks/UseTitle';
 ;
 
 const projects = [
-    {
+       {
         id: 1,
+        name: 'Study Mate',
+        image: 'https://i.postimg.cc/QsCLVrsH/rr.jpg',
+        path: '/projects/study-mate',
+        description:
+            'StudyMate – A collaborative learning platform with role-based dashboards for students, tutors, and admins. Features include session booking, study materials, notes management, payments, and advanced admin controls.',
+    },
+    {
+        id: 2,
         name: 'Flora Nest',
         image: 'https://i.postimg.cc/ZK4t8Kxc/flora-nest.jpg',
         path: '/projects/flora-nest',
@@ -15,7 +23,7 @@ const projects = [
             'Plant & bonsai booking app with Firebase Auth, admin features, and modern UI.',
     },
     {
-        id: 2,
+        id: 3,
         name: 'Athletic Hub',
         image: 'https://i.postimg.cc/MGch6czW/athletic-hub.jpg',
         path: '/projects/athletic-hub',
@@ -23,7 +31,7 @@ const projects = [
             'Sports event platform with category filtering, dashboards, and analytics.',
     },
     {
-        id: 3,
+        id: 4,
         name: 'The EPL Hub',
         image: 'https://i.postimg.cc/7Yp4J1JX/the-EPL-hub.jpg',
         path: '/projects/the-epl-hub',
