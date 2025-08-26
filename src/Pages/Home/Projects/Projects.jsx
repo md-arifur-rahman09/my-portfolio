@@ -9,7 +9,7 @@ const projects = [
        {
         id: 1,
         name: 'Study Mate',
-        image: 'https://i.postimg.cc/QsCLVrsH/rr.jpg',
+        image: 'https://i.postimg.cc/wjCh6Ydq/study-mate.jpg',
         path: '/projects/study-mate',
         description:
             'StudyMate – A collaborative learning platform with role-based dashboards for students, tutors, and admins. Features include session booking, study materials, notes management, payments, and advanced admin controls.',

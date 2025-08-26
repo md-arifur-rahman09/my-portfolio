@@ -49,7 +49,7 @@ const StudyMate = () => {
           style={{ transform: `scale(${scale})` }}
         >
           <img
-            src="https://i.postimg.cc/QsCLVrsH/rr.jpg"
+            src="https://i.postimg.cc/wjCh6Ydq/study-mate.jpg"
             alt="StudyMate"
             className="rounded-lg mb-8 shadow-lg"
           />
